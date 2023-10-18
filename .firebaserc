@@ -1,20 +1,20 @@
 {
   "projects": {
-    "dev": "dev-ion4fullpwa",
-    "pro": "pro-ion4fullpwa"
+    "dev": "dev-fitfileconnect",
+    "pro": "pro-fitfileconnect"
   },
   "targets": {
-    "dev-ion4fullpwa": {
+    "dev-fitfileconnect": {
       "hosting": {
-        "02-2023-release": [
-          "dev-ionic-6-full-app"
+        "10-2023-release": [
+          "fitfileconnect-app"
         ]
       }
     },
-    "pro-ion4fullpwa": {
+    "pro-fitfileconnect": {
       "hosting": {
-        "02-2023-release": [
-          "pro-ionic-6-full-app"
+        "11-2023-release": [
+          "fitfileconnect-app"
         ]
       }
     }

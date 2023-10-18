@@ -1,13 +1,12 @@
 {
-  "name": "IonicFullApp-PRO",
-  "description": "The most advanced and complete Mobile & PWA Ionic starter app template",
-  "version": "6.0.0",
-  "author": "IonicThemes",
+  "name": "FIT File Connect",
+  "description": "Bringing your FIT files to Wahoo",
+  "version": "0.0.1",
+  "author": "John Baima",
   "contributors": [
-    "Dayana <dayana@ionicthemes.com>",
-    "Agustín <agustin@ionicthemes.com>"
+    "John Baima <john@baima.org>"
   ],
-  "homepage": "https://ionicthemes.com/",
+  "homepage": "https://fitfileconnect.web.app/",
   "private": true,
   "scripts": {
     "ng": "ng",

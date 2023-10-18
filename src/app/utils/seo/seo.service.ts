@@ -55,8 +55,8 @@ export class SeoService implements OnDestroy {
         });
       } else {
         // Set default SEO values here
-        currentRouteSeoData.title = 'Ionic Full Starter App';
-        currentRouteSeoData.description = 'Ionic 6 Full Starter App Template - by IonicThemes';
+        currentRouteSeoData.title = 'FIT File Connect';
+        currentRouteSeoData.description = 'FIT File Connect';
         currentRouteSeoData.keywords = '';
         currentRouteSeoData.image = 'https://s3-us-west-2.amazonaws.com/ionicthemes/imgs/logofacebook.png';
 

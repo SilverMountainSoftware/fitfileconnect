@@ -1,4 +1,4 @@
-package com.ionicthemes.ionic5fullapp;
+package app.web.fitfileconnect;
 
 import android.os.Bundle;
 

@@ -1,10 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Ionic5FullApp</string>
-    <string name="title_activity_main">Ionic5FullApp</string>
-    <string name="package_name">com.ionicthemes.ionic5fullapp</string>
-    <string name="custom_url_scheme">com.ionicthemes.ionic5fullapp</string>
-    <string name="facebook_app_id">661697104401356</string>
-    <string name="facebook_client_token">98479802a72602b4b746c4adce00decf</string>
-    <string name="fb_login_protocol_scheme">fb661697104401356</string>
+    <string name="app_name">fitfileconnect</string>
+    <string name="title_activity_main">fitfileconnect</string>
+    <string name="package_name">app.web.fitfileconnect</string>
+    <string name="custom_url_scheme">app.web.fitfileconnect</string>
 </resources>

@@ -76,13 +76,5 @@ export class VideoPlaylistPage implements OnInit {
 
   shareMedia() {
     const selectedVideo = this.video_playlist_model.selected_video;
-    Share.share({
-      title: selectedVideo.title,
-      text: selectedVideo.description,
-      url: 'https://ionicthemes.com/',
-      dialogTitle: 'Share Media'
-    })
-    .then(() => console.log('Successful share'))
-    .catch((error) => console.log('Error sharing', error));
   }
 }

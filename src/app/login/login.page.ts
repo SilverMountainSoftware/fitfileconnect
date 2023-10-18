@@ -64,7 +64,7 @@ export class LoginPage {
     this.router.navigate(['app/categories']);
   }
 
-  doGoogleLogin(): void {
+  doWahooLogin(): void {
     console.log('google login');
     this.router.navigate(['app/categories']);
   }

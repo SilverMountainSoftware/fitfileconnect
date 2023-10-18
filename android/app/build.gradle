@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.ionicthemes.ionic5fullapp"
+        applicationId "app.web.fitfileconnect"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -20,7 +20,7 @@ android {
        sourceCompatibility JavaVersion.VERSION_1_8
        targetCompatibility JavaVersion.VERSION_1_8
    }
-    namespace 'com.ionicthemes.ionic5fullapp'
+    namespace 'app.web.fitfileconnect'
 }
 
 repositories {
