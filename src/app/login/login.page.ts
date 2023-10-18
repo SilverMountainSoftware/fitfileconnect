@@ -1,3 +1,4 @@
+import { FitfilesPage } from './../fitfiles/fitfiles.page';
 import { Component } from '@angular/core';
 import { Validators, UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -50,32 +51,8 @@ export class LoginPage {
     this.menu.enable(true);
   }
 
-  doLogin(): void {
-    console.log('do Log In');
-    this.router.navigate(['app/categories']);
-  }
-
-  goToForgotPassword(): void {
-    console.log('redirect to forgot-password page');
-  }
-
-  doFacebookLogin(): void {
-    console.log('facebook login');
-    this.router.navigate(['app/categories']);
-  }
-
   doWahooLogin(): void {
     console.log('google login');
-    this.router.navigate(['app/categories']);
-  }
-
-  doTwitterLogin(): void {
-    console.log('twitter login');
-    this.router.navigate(['app/categories']);
-  }
-
-  doAppleLogin(): void {
-    console.log('apple login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/fitfiles']);
   }
 }

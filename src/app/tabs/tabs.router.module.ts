@@ -1,3 +1,4 @@
+import { FitfilesPageModule } from './../fitfiles/fitfiles.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -11,56 +12,16 @@ const routes: Routes = [
       // /app/ redirect
       {
         path: '',
-        redirectTo: 'categories',
+        redirectTo: 'fitfiles',
         pathMatch: 'full'
       },
       {
-        path: 'categories',
+        path: 'fitfiles',
         children: [
           {
             path: '',
-            loadChildren: () => import('../categories/categories.module').then(m => m.CategoriesPageModule)
+            loadChildren: () => import('../fitfiles/fitfiles-routing.module').then(m => m.FitfilesPageRoutingModule)
           },
-          {
-            path: 'fashion',
-            loadChildren: () => import('../fashion/listing/fashion-listing.module').then(m => m.FashionListingPageModule)
-          },
-          {
-            path: 'fashion/:productId',
-            loadChildren: () => import('../fashion/details/fashion-details.module').then(m => m.FashionDetailsPageModule)
-          },
-          {
-            path: 'food',
-            loadChildren: () => import('../food/listing/food-listing.module').then(m => m.FoodListingPageModule)
-          },
-          {
-            path: 'food/:productId',
-            loadChildren: () => import('../food/details/food-details.module').then(m => m.FoodDetailsPageModule)
-          },
-          {
-            path: 'travel',
-            loadChildren: () => import('../travel/listing/travel-listing.module').then(m => m.TravelListingPageModule)
-          },
-          {
-            path: 'travel/:productId',
-            loadChildren: () => import('../travel/details/travel-details.module').then(m => m.TravelDetailsPageModule)
-          },
-          {
-            path: 'deals',
-            loadChildren: () => import('../deals/listing/deals-listing.module').then(m => m.DealsListingPageModule)
-          },
-          {
-            path: 'deals/:productId',
-            loadChildren: () => import('../deals/details/deals-details.module').then(m => m.DealsDetailsPageModule)
-          },
-          {
-            path: 'real-estate',
-            loadChildren: () => import('../real-estate/listing/real-estate-listing.module').then(m => m.RealEstateListingPageModule)
-          },
-          {
-            path: 'real-estate/:productId',
-            loadChildren: () => import('../real-estate/details/real-estate-details.module').then(m => m.RealEstateDetailsPageModule)
-          }
         ]
       },
       {

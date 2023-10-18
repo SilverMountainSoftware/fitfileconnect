@@ -8,10 +8,6 @@ export const REDIRECT_ROUTES = [
     to: '/auth/login'
   },
   {
-    from: '/app',
-    to: '/app/categories'
-  },
-  {
     from: '/firebase',
     to: '/firebase/auth/sign-in'
   },
@@ -41,17 +37,6 @@ export const APP_ROUTES = [
   '/auth/login',
   '/auth/signup',
   '/auth/forgot-password',
-  '/app/categories',
-  '/app/categories/fashion',
-  '/app/categories/fashion/:productId',
-  '/app/categories/food',
-  '/app/categories/food/:productId',
-  '/app/categories/travel',
-  '/app/categories/travel/:productId',
-  '/app/categories/deals',
-  '/app/categories/deals/:productId',
-  '/app/categories/real-estate',
-  '/app/categories/real-estate/:productId',
   '/app/user',
   '/app/user/friends',
   '/app/notifications',

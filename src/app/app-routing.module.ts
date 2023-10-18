@@ -80,6 +80,10 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'page-not-found'
+  },
+  {
+    path: 'fitfiles',
+    loadChildren: () => import('./fitfiles/fitfiles.module').then( m => m.FitfilesPageModule)
   }
 ];
 @NgModule({

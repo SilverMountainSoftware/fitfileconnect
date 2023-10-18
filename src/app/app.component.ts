@@ -21,11 +21,6 @@ import { HistoryHelperService } from './utils/history-helper.service';
 export class AppComponent {
   appPages = [
     {
-      title: 'Categories',
-      url: '/app/categories',
-      ionicIcon: 'list-outline'
-    },
-    {
       title: 'Profile',
       url: '/app/user',
       ionicIcon: 'person-outline'
