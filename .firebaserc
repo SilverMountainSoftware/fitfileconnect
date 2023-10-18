@@ -1,7 +1,8 @@
 {
   "projects": {
     "dev": "dev-fitfileconnect",
-    "pro": "pro-fitfileconnect"
+    "pro": "pro-fitfileconnect",
+    "default": "fitfileconnect"
   },
   "targets": {
     "dev-fitfileconnect": {
