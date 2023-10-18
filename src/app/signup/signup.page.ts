@@ -3,7 +3,6 @@ import { Validators, UntypedFormGroup, UntypedFormControl } from '@angular/forms
 import { Router } from '@angular/router';
 import { ModalController, MenuController, IonRouterOutlet } from '@ionic/angular';
 
-import { TermsOfServicePage } from '../terms-of-service/terms-of-service.page';
 import { PrivacyPolicyPage } from '../privacy-policy/privacy-policy.page';
 import { PasswordValidator } from '../validators/password.validator';
 
@@ -68,15 +67,6 @@ export class SignupPage {
   // Restore to default when leaving this page
   ionViewDidLeave(): void {
     this.menu.enable(true);
-  }
-
-  async showTermsModal() {
-    const modal = await this.modalController.create({
-      component: TermsOfServicePage,
-      swipeToClose: true,
-      presentingElement: this.routerOutlet.nativeEl
-    });
-    return await modal.present();
   }
 
   async showPrivacyModal() {

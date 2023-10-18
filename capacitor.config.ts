@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.ionicthemes.ionic5fullapp',
-  appName: 'Ionic6FullAppPro',
+  appId: 'app.web.fitfileconnect',
+  appName: 'fitfileconnect',
   webDir: 'dist/app/browser',
   bundledWebRuntime: false,
   plugins: {

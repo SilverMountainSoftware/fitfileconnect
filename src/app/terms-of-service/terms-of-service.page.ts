@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-terms-of-service-page',
