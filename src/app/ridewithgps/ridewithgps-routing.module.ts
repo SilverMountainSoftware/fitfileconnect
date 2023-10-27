@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { FitfilesPage } from './fitfiles.page';
+import { RidewithgpsPage } from './ridewithgps.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: FitfilesPage
+    component: RidewithgpsPage
   }
 ];
 
-// testing
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FitfilesPageRoutingModule {}
+export class RidewithgpsPageRoutingModule {}

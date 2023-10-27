@@ -20,7 +20,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../fitfiles/fitfiles-routing.module').then(m => m.FitfilesPageRoutingModule)
+            loadChildren: () => import('../fitfiles/fitfiles.module').then(m => m.FitfilesPageModule)
           },
         ]
       },

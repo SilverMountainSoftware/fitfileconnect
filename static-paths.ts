@@ -40,6 +40,7 @@ export const APP_ROUTES = [
   '/app/user',
   '/app/user/friends',
   '/app/notifications',
+  '/app/fitfiles',
   '/firebase/auth/sign-in',
   '/firebase/auth/sign-up',
   '/firebase/crud/listing',

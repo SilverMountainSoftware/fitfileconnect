@@ -34,10 +34,20 @@ export class AppComponent {
       title: 'Notifications',
       url: '/app/notifications',
       ionicIcon: 'notifications-outline'
+    },
+    {
+      title: 'Fit File',
+      url: '/app/fitfiles',
+      ionicIcon: 'person-add-outline'
     }
   ];
 
   accountPages = [
+    {
+      title: 'Fit File1',
+      url: '/fitfiles',
+      ionicIcon: 'person-add-outline'
+    },
     {
       title: 'Log In',
       url: '/auth/login',

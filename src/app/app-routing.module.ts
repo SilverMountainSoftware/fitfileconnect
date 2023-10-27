@@ -3,6 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'fitfiles',
+    loadChildren: () => import('./fitfiles/fitfiles.module').then( m => m.FitfilesPageModule)
+  },
+  {
+    path: 'app/fitfiles',
+    loadChildren: () => import('./fitfiles/fitfiles.module').then( m => m.FitfilesPageModule)
+  },
+  {
     path: '',
     redirectTo: '/walkthrough',
     pathMatch: 'full'
@@ -78,13 +86,13 @@ const routes: Routes = [
     loadChildren: () => import('./video-playlist/video-playlist.module').then(m => m.VideoPlaylistPageModule)
   },
   {
+    path: 'ridewithgps',
+    loadChildren: () => import('./ridewithgps/ridewithgps.module').then( m => m.RidewithgpsPageModule)
+  },
+  {
     path: '**',
     redirectTo: 'page-not-found'
   },
-  {
-    path: 'fitfiles',
-    loadChildren: () => import('./fitfiles/fitfiles.module').then( m => m.FitfilesPageModule)
-  }
 ];
 @NgModule({
   imports: [

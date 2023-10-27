@@ -1,3 +1,4 @@
+import { getStorage, ref, uploadBytes } from "firebase/storage";
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
@@ -10,12 +11,9 @@ export class FitfilesPage implements OnInit {
   // Single File Upload
   private file: File;
 
-  // Multiple File Upload
-  private fileOne: File;
-  private fileTwo: File;
-  private fileThree: File;
-
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    console.log("Entering FitfilesPage constructor");
+  }
 
   // Single File Upload
   onFileChange(fileChangeEvent) {
@@ -24,41 +22,18 @@ export class FitfilesPage implements OnInit {
 
   async submitForm() {
     let formData = new FormData();
-    formData.append("photo", this.file, this.file.name);
+    formData.append("fit", this.file, this.file.name);
 
-    const serverUrl = "http://localhost:3000/upload";
-    const nestServerUrl = "http://localhost:3000/photos/upload";
+    // Create a root reference
+    const storage = getStorage();
+    // Create a reference to 'mountains.jpg'
+    const storageRef = ref(storage, this.file.name);
 
-    this.http.post(serverUrl, formData).subscribe((response) => {
-      console.log(response);
+    uploadBytes(storageRef, this.file).then((snapshot) => {
+      console.log('Uploaded a blob or file!');
     });
-  }
-
-  // Multiple File Upload
-  onFileOneChange(fileChangeEvent) {
-    this.fileOne = fileChangeEvent.target.files[0];
-  }
-
-  onFileTwoChange(fileChangeEvent) {
-    this.fileTwo = fileChangeEvent.target.files[0];
-  }
-
-  onFileThreeChange(fileChangeEvent) {
-    this.fileThree = fileChangeEvent.target.files[0];
-  }
-
-  async submitMultipleForm() {
-    let formData = new FormData();
-    formData.append("photos[]", this.fileOne, this.fileOne.name);
-    formData.append("photos[]", this.fileTwo, this.fileTwo.name);
-    formData.append("photos[]", this.fileThree, this.fileOne.name);
-
-    const serverUrl = "http://localhost:3000/uploads";
-    const nestServerUrl = "http://localhost:3000/photos/uploads";
-
-    this.http.post(serverUrl, formData).subscribe((response) => {
-      console.log(response);
-    });
+    
+    console.log('Exiting submit form!');
   }
 
   ngOnInit() {}
